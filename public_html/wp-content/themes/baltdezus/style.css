@@ -1,0 +1,276 @@
+/*!
+Theme Name: baltdezus
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: baltdezus
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+
+
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+:root {
+	--maingreen: #67c84a;
+	--black: #141414;
+	--mainwhite: #f4f4f4;
+	--secgreen: #00b637;
+}
+
+
+body{
+	font-family: "Inter Tight", sans-serif;
+	background: #f4f4f4;
+}
+
+.header__container{
+	max-width:100%;
+	padding: 30px;
+border-radius: 13px;
+	margin: 30px 30px;
+	background:#fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__list{
+	display:flex;
+
+}
+
+.header__item{
+	border-right:1px solid var(--maingreen);
+	padding-right:25px;
+}
+
+.header__item:not(.header__item:first-child){
+	border-right:1px solid var(--maingreen);
+	padding-right:25px;
+		padding-left:25px;
+}
+
+.header__item:last-child{
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.header__link{
+	font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+color: var(--black);
+	opacity:0.8;
+	transition:0.3s;
+	border-bottom:1px solid #fff;
+}
+
+.header__link:hover{
+	opacity:1;
+	border-bottom:1px solid var(--maingreen);
+}
+
+.header__logo-link img{
+	position:absolute;
+	left:50%;
+	top:30px;
+	transform:translate(-50% , 0)
+}
+
+.header__button{
+	display:flex;
+	gap:10px;
+	color:#000;
+}
+
+.back_img{
+	    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.intro__container{
+	    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+	flex-wrap:wrap;
+}
+
+.intro__form{
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+	max-width:1000px;
+	margin: 0 20px;
+    align-items: center;
+}
+
+.intro__form-group{
+	flex:1 1 22%;
+}
+
+.intro__form-group:nth-child(5){
+	flex:0 1 25%;
+}
+
+.intro__form-group:nth-child(6){
+	flex:0 1 100%;
+}
+
+.intro__button{
+width: 186px;
+	font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+color: var(--mainwhite);
+	border-radius: 8px;
+padding: 16px 64px;
+	box-shadow: 3px 3px 12px 0 rgba(0, 0, 0, 0.15);
+background: var(--maingreen);
+	transition:0.3s;
+}
+
+.intro__button:hover{
+	background:#fff;
+	color:var(--maingreen);;
+	
+}
+
+.intro__form-group input::placeholder{
+	color:#fff;
+
+}
+
+.intro__form-group input {
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.intro__title{
+	font-weight: 400;
+font-size: clamp(3.688rem, 1.389vw + 2.646rem, 4.313rem);
+line-height: 100%;
+letter-spacing: -0.03em;
+text-align: center;
+	margin-top:clamp(6.25rem, 18.889vw - 7.917rem, 14.75rem);
+	margin-bottom:75px;
+	color:#fff;
+}
+
+.wrap{
+	width: 100%;
+    text-align: center;
+margin-top: clamp(0.625rem, 6.944vw - 4.583rem, 3.75rem);
+}
+
+.intro__title span{
+	color: var(--maingreen);
+}
